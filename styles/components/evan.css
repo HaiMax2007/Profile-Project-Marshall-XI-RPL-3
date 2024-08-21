@@ -1,0 +1,151 @@
+.evan {
+  color: var(--clr-slate200);
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.evan__title {
+  color: var(--clr-orange);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--size-3xl);
+}
+
+.title2 {
+  margin-top: 1.5rem;
+  display: none;
+}
+
+.evan__btnArrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.evan__arrow {
+  fill: var(--clr-purple);
+  width: 2rem;
+  height: 2rem;
+}
+
+.evan__about {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.evan__about img {
+  max-width: 300px;
+  box-shadow: 0 5px 5px 0;
+  align-self: center;
+}
+
+.evan__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.evan__btn {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-size: var(--size-xs);
+}
+
+.evan__desc {
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  border: 1px solid var(--clr-orange);
+}
+
+.evan__table {
+  width: 100%;
+  color: var(--clr-light);
+  background-color: var(--clr-slate800);
+  font-size: var(--size-xs);
+}
+
+.evan__table,
+td,
+th {
+  border: 1px solid var(--clr-purple);
+  text-align: center;
+}
+
+.evan__table > th,
+td {
+  padding: 1rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  .evan__top img {
+    max-width: 400px;
+  }
+
+  .evan__btn {
+    font-size: var(--size-sm);
+  }
+
+  .evan__table {
+    font-size: var(--size-sm);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .evan__btn {
+    font-size: var(--size-base);
+  }
+
+  .evan__table {
+    max-width: 768px;
+    color: var(--clr-light);
+    background-color: var(--clr-slate800);
+    font-size: var(--size-base);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .title1 {
+    display: none;
+  }
+  .title2 {
+    display: block;
+  }
+
+  .evan__about {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .evan__about img {
+    max-width: 500px;
+  }
+
+  .evan__top {
+    width: 50%;
+    flex-direction: column;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+.hidden {
+  visibility: hidden;
+}
